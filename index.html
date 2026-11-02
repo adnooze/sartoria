@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="bs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sartoria — Haljine po mjeri · Zenica</title>
+  <meta name="description" content="Sartoria — radionica u Zenici. Izrada odjeće po mjeri i želji: haljine u univerzalnim veličinama, dužina po vašoj želji, dostava poštom širom BiH.">
+  <link rel="icon" href="images/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="announce">
+    <p>Šivanje po mjeri i želji <span>·</span> Dostava poštom širom BiH <span>·</span> Cijene već od 39 KM</p>
+  </div>
+
+  <header class="header" id="top">
+    <nav class="nav nav--left" aria-label="Glavna navigacija">
+      <a href="#kolekcija">Kolekcija</a>
+      <a href="#novo">Novo</a>
+      <a href="#po-mjeri">Po mjeri</a>
+      <a href="#lookbook">Lookbook</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <a href="#top" class="logo" aria-label="Sartoria — početna">SARTORIA</a>
+    <div class="nav nav--right">
+      <a href="https://www.instagram.com/_.sartoria._/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r=".6" fill="currentColor"/></svg>
+      </a>
+      <a href="https://www.facebook.com/sartorya" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg>
+      </a>
+      <a href="https://ig.me/m/_.sartoria._" target="_blank" rel="noopener" class="nav__cta">Naruči</a>
+      <button class="burger" aria-label="Otvori meni" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="drawer" id="drawer">
+    <a href="#kolekcija">Kolekcija</a>
+    <a href="#novo">Novo</a>
+    <a href="#po-mjeri">Po mjeri</a>
+    <a href="#lookbook">Lookbook</a>
+    <a href="#kontakt">Kontakt</a>
+    <a href="https://ig.me/m/_.sartoria._" target="_blank" rel="noopener">Naruči u inbox</a>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__media">
+        <img src="images/w1400/DU_te4uiEGG_06.jpg" alt="Haljina Aurora u lila nijansi s ružom" fetchpriority="high">
+        <img src="images/w1400/DU_te4uiEGG_02.jpg" alt="Haljina Aurora s raskošnim rukavima">
+        <img src="images/w1400/DU_te4uiEGG_10.jpg" alt="Lepršava svečana haljina Aurora">
+      </div>
+      <div class="hero__content">
+        <p class="eyebrow">Jesenja kolekcija 2026</p>
+        <h1>Elegancija.<br>Po mjeri.<br>Vaša.</h1>
+        <p class="hero__lead">Haljine šivane s posebnom pažnjom — pažljivo birani materijali, univerzalne veličine i dužina po vašoj želji.</p>
+        <div class="hero__actions">
+          <a href="#novo" class="btn btn--light">Pogledaj kolekciju</a>
+          <a href="#po-mjeri" class="link-arrow">Šivanje po mjeri</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOVO -->
+    <section class="section products" id="novo">
+      <h2 class="section-title">Novo u ponudi</h2>
+      <div class="tabs" role="tablist" aria-label="Kategorije">
+        <button role="tab" class="tab is-active" data-tab="novo">Novo</button>
+        <button role="tab" class="tab" data-tab="jesen">Jesen</button>
+        <button role="tab" class="tab" data-tab="karirano">Karirano &amp; pruge</button>
+        <button role="tab" class="tab" data-tab="mjera">Po mjeri</button>
+        <button role="tab" class="tab" data-tab="akcija">Sniženje</button>
+      </div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      <div class="center">
+        <a href="#lookbook" class="btn btn--outline">Pogledaj sve modele</a>
+      </div>
+    </section>
+
+    <!-- MOSAIC -->
+    <section class="section mosaic" id="kolekcija">
+      <a class="tile tile--tall" href="#lookbook" data-filter="aurora">
+        <img src="images/w1400/DU_te4uiEGG_03.jpg" alt="Detalj haljine Aurora s ružom" loading="lazy">
+        <div class="tile__text">
+          <h3>Aurora</h3>
+          <p>Duga, lepršava haljina od svilenkasto lagane tkanine — izbor za maturu i svečane prilike.</p>
+          <span class="link-arrow">Pogledaj</span>
+        </div>
+      </a>
+      <a class="tile" href="#lookbook" data-filter="jesen">
+        <img src="images/w1400/Db4_bv5CEQe_03.jpg" alt="Haljina u boji senfa" loading="lazy">
+        <div class="tile__text">
+          <h3>Jesen je stigla</h3>
+          <p>Posebni krojevi i pažljivo birani materijali.</p>
+          <span class="link-arrow">Pogledaj</span>
+        </div>
+      </a>
+      <a class="tile" href="#lookbook" data-filter="karirano">
+        <img src="images/w1400/Ddj91wQCFgj_01.jpg" alt="Karirana haljina" loading="lazy">
+        <div class="tile__text">
+          <h3>Karirano &amp; pruge</h3>
+          <p>Klasični uzorci za svaki dan.</p>
+          <span class="link-arrow">Pogledaj</span>
+        </div>
+      </a>
+      <a class="tile tile--wide" href="#novo" data-tab="akcija">
+        <div class="tile__panel">
+          <p class="eyebrow">Posljednji komadi</p>
+          <h3>Sniženje<br><em>od 20 KM</em></h3>
+          <p>Omiljeni modeli po posebnim cijenama — akcija traje do isteka zaliha.</p>
+          <span class="btn btn--light">Do akcije</span>
+        </div>
+        <img src="images/w1400/DezoFhxiDeA_08.jpg" alt="Crna haljina s kaišem" loading="lazy">
+      </a>
+    </section>
+
+    <!-- QUOTE -->
+    <section class="quote">
+      <p class="eyebrow">Sartoria</p>
+      <blockquote>„Nositi nešto što niko drugi nema? Neprocjenjivo.”</blockquote>
+    </section>
+
+    <!-- PO MJERI -->
+    <section class="section bespoke" id="po-mjeri">
+      <div class="bespoke__media">
+        <img src="images/w1400/Dco6TRPCLNt_04.jpg" alt="Haljina u boji magente s detaljem na rukavu" loading="lazy">
+        <img src="images/w1400/Dco6TRPCLNt_14.jpg" alt="Plava haljina šivana po mjeri" loading="lazy">
+      </div>
+      <div class="bespoke__text">
+        <p class="eyebrow">Izrada po mjeri</p>
+        <h2>Šijemo po vašoj želji i vašim mjerama</h2>
+        <p class="muted">Veličine su univerzalne, prilagođene različitim građama, a dužinu haljine izrađujemo prema vašim željama. Neki modeli dostupni su u samo jednom ili dva primjerka.</p>
+        <ol class="steps">
+          <li><span>01</span><div><h3>Odaberite model</h3><p>Izaberite model haljine, rukava i materijal.</p></div></li>
+          <li><span>02</span><div><h3>Pošaljite mjere</h3><p>Vodič za mjerenje šaljemo u inbox — brzo, lako i bez greške.</p></div></li>
+          <li><span>03</span><div><h3>Preuzmite haljinu</h3><p>Brza isporuka poštom ili lično preuzimanje u našoj radionici u Zenici.</p></div></li>
+        </ol>
+        <a href="https://ig.me/m/_.sartoria._" target="_blank" rel="noopener" class="btn btn--dark">Konsultacije u inboxu</a>
+      </div>
+    </section>
+
+    <!-- CAPSULE -->
+    <section class="section capsule">
+      <h2 class="section-title">Jesenja kapsula</h2>
+      <div class="capsule__grid">
+        <a class="ctile" href="#lookbook" data-filter="jesen">
+          <img src="images/w600/Db4_bv5CEQe_01.jpg" alt="Haljina u boji senfa s maramom" loading="lazy">
+          <div><h3>Senf &amp; zlato</h3><p>Topli tonovi za zlatnu jesen</p><span class="link-arrow">Pogledaj</span></div>
+        </a>
+        <a class="ctile" href="#lookbook" data-filter="jesen">
+          <img src="images/w600/DeSmMXgCPYD_04.jpg" alt="Haljina na pruge" loading="lazy">
+          <div><h3>Pruge</h3><p>Svjež ritam za svaki dan</p><span class="link-arrow">Pogledaj</span></div>
+        </a>
+        <a class="ctile" href="#lookbook" data-filter="karirano">
+          <img src="images/w600/Ddj91wQCFgj_04.jpg" alt="Crvena karirana haljina" loading="lazy">
+          <div><h3>Karirano</h3><p>Klasika koja ne izlazi iz mode</p><span class="link-arrow">Pogledaj</span></div>
+        </a>
+        <a class="ctile" href="#lookbook" data-filter="jesen">
+          <img src="images/w600/DeSmMXgCPYD_18.jpg" alt="Haljina u karamel tonu" loading="lazy">
+          <div><h3>Zemljani tonovi</h3><p>Karamel, maslina i terakota</p><span class="link-arrow">Pogledaj</span></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- VALUES -->
+    <section class="values">
+      <div><h3>Po mjeri</h3><p>Dužina haljine po vašoj želji</p></div>
+      <div><h3>Univerzalne veličine</h3><p>Prilagođene različitim građama</p></div>
+      <div><h3>Ograničene količine</h3><p>Modeli u jednom ili dva primjerka</p></div>
+      <div><h3>Dostava širom BiH</h3><p>Poštom ili lično u Zenici</p></div>
+    </section>
+
+    <!-- LOOKBOOK -->
+    <section class="section lookbook" id="lookbook">
+      <h2 class="section-title">Lookbook</h2>
+      <p class="section-sub">Svi modeli s našeg Instagrama — <a href="https://www.instagram.com/_.sartoria._/" target="_blank" rel="noopener">@_.sartoria._</a></p>
+      <div class="tabs" id="galleryTabs"></div>
+      <div class="gallery" id="gallery"></div>
+      <div class="center">
+        <button class="btn btn--outline" id="loadMore">Prikaži još</button>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="kontakt">
+      <div class="contact__text">
+        <p class="eyebrow">Posjetite našu radionicu</p>
+        <h2>Sartoria, Zenica</h2>
+        <address>
+          Vojvodica put br. 6, Jalija<br>
+          preko puta žute zgrade Hadžinice<br>
+          Zenica, Bosna i Hercegovina
+        </address>
+        <p class="muted">Za informacije o cijenama, materijalima i narudžbama javite nam se privatnom porukom.</p>
+        <div class="contact__actions">
+          <a href="https://ig.me/m/_.sartoria._" target="_blank" rel="noopener" class="btn btn--dark">Pošalji poruku</a>
+          <a href="https://www.instagram.com/_.sartoria._/" target="_blank" rel="noopener" class="link-arrow">Instagram</a>
+          <a href="https://www.facebook.com/sartorya" target="_blank" rel="noopener" class="link-arrow">Facebook</a>
+        </div>
+      </div>
+      <div class="contact__map">
+        <iframe title="Lokacija radionice Sartoria" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=Vojvodica%20put%206%2C%20Zenica&z=15&output=embed"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__brand">
+      <span class="logo">SARTORIA</span>
+      <p>Usluge izrade odjeće po mjeri i želji. Radionica u Zenici, Bosna i Hercegovina.</p>
+    </div>
+    <div>
+      <h3>Kolekcija</h3>
+      <a href="#novo">Novo u ponudi</a>
+      <a href="#kolekcija">Aurora</a>
+      <a href="#lookbook">Lookbook</a>
+    </div>
+    <div>
+      <h3>Usluge</h3>
+      <a href="#po-mjeri">Šivanje po mjeri</a>
+      <a href="#po-mjeri">Vodič za mjerenje</a>
+      <a href="#kontakt">Dostava i preuzimanje</a>
+    </div>
+    <div>
+      <h3>Pratite nas</h3>
+      <a href="https://www.instagram.com/_.sartoria._/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/sartorya" target="_blank" rel="noopener">Facebook</a>
+    </div>
+    <p class="footer__copy">© 2026 Sartoria. Sva prava zadržana.</p>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" aria-label="Zatvori">×</button>
+    <button class="lightbox__nav lightbox__prev" aria-label="Prethodna">‹</button>
+    <figure>
+      <figcaption></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__next" aria-label="Sljedeća">›</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

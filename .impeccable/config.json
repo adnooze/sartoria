@@ -1,0 +1,26 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "hero-eyebrow-chip",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-02T15:33:54.948Z",
+        "reason": "Claude: user-supplied reference mockup has a collection label above the hero headline"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-02T15:33:55.275Z",
+        "reason": "Claude: only hit is the full-bleed photo hero; text block has gutter padding"
+      }
+    ]
+  }
+}
