@@ -1,0 +1,46 @@
+---
+import { img } from "../data/site";
+
+const tiles = [
+  { file: "Db4_bv5CEQe_01", filter: "jesen", title: "Senf & zlato", text: "Topli tonovi za zlatnu jesen", alt: "Haljina u boji senfa s maramom" },
+  { file: "DeSmMXgCPYD_04", filter: "jesen", title: "Pruge", text: "Svjež ritam za svaki dan", alt: "Haljina na pruge" },
+  { file: "Ddj91wQCFgj_04", filter: "karirano", title: "Karirano", text: "Klasika koja ne izlazi iz mode", alt: "Crvena karirana haljina" },
+  { file: "DeSmMXgCPYD_18", filter: "jesen", title: "Zemljani tonovi", text: "Karamel, maslina i terakota", alt: "Haljina u karamel tonu" },
+];
+
+const values = [
+  { title: "Po mjeri", text: "Dužina haljine po vašoj želji" },
+  { title: "Univerzalne veličine", text: "Prilagođene različitim građama" },
+  { title: "Ograničene količine", text: "Modeli u jednom ili dva primjerka" },
+  { title: "Dostava širom BiH", text: "Poštom ili lično u Zenici" },
+];
+---
+
+<section class="section capsule">
+  <h2 class="section-title">Jesenja kapsula</h2>
+  <div class="capsule__grid">
+    {
+      tiles.map((t) => (
+        <a class="ctile" href="#lookbook" data-filter={t.filter}>
+          <img src={img(t.file)} alt={t.alt} loading="lazy" />
+          <div>
+            <h3>{t.title}</h3>
+            <p>{t.text}</p>
+            <span class="link-arrow">Pogledaj</span>
+          </div>
+        </a>
+      ))
+    }
+  </div>
+</section>
+
+<section class="values">
+  {
+    values.map((v) => (
+      <div>
+        <h3>{v.title}</h3>
+        <p>{v.text}</p>
+      </div>
+    ))
+  }
+</section>

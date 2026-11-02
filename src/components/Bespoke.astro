@@ -1,0 +1,38 @@
+---
+import { DM, img } from "../data/site";
+
+const steps = [
+  { title: "Odaberite model", text: "Izaberite model haljine, rukava i materijal." },
+  { title: "Pošaljite mjere", text: "Vodič za mjerenje šaljemo u inbox — brzo, lako i bez greške." },
+  { title: "Preuzmite haljinu", text: "Brza isporuka poštom ili lično preuzimanje u našoj radionici u Zenici." },
+];
+---
+
+<section class="section bespoke" id="po-mjeri">
+  <div class="bespoke__media">
+    <img src={img("Dco6TRPCLNt_04", 1400)} alt="Haljina u boji magente s detaljem na rukavu" loading="lazy" />
+    <img src={img("Dco6TRPCLNt_14", 1400)} alt="Plava haljina šivana po mjeri" loading="lazy" />
+  </div>
+  <div class="bespoke__text">
+    <p class="eyebrow">Izrada po mjeri</p>
+    <h2>Šijemo po vašoj želji i vašim mjerama</h2>
+    <p class="muted">
+      Veličine su univerzalne, prilagođene različitim građama, a dužinu haljine izrađujemo prema vašim željama. Neki
+      modeli dostupni su u samo jednom ili dva primjerka.
+    </p>
+    <ol class="steps">
+      {
+        steps.map((s, i) => (
+          <li>
+            <span>{String(i + 1).padStart(2, "0")}</span>
+            <div>
+              <h3>{s.title}</h3>
+              <p>{s.text}</p>
+            </div>
+          </li>
+        ))
+      }
+    </ol>
+    <a href={DM} target="_blank" rel="noopener" class="btn btn--dark">Konsultacije u inboxu</a>
+  </div>
+</section>

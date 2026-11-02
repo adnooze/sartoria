@@ -1,0 +1,30 @@
+---
+import { IG, FB } from "../data/site";
+
+const year = new Date().getFullYear();
+---
+
+<footer class="footer">
+  <div class="footer__brand">
+    <span class="logo">SARTORIA</span>
+    <p>Usluge izrade odjeće po mjeri i želji. Radionica u Zenici, Bosna i Hercegovina.</p>
+  </div>
+  <div>
+    <h3>Kolekcija</h3>
+    <a href="#novo">Novo u ponudi</a>
+    <a href="#kolekcija">Aurora</a>
+    <a href="#lookbook">Lookbook</a>
+  </div>
+  <div>
+    <h3>Usluge</h3>
+    <a href="#po-mjeri">Šivanje po mjeri</a>
+    <a href="#po-mjeri">Vodič za mjerenje</a>
+    <a href="#kontakt">Dostava i preuzimanje</a>
+  </div>
+  <div>
+    <h3>Pratite nas</h3>
+    <a href={IG} target="_blank" rel="noopener">Instagram</a>
+    <a href={FB} target="_blank" rel="noopener">Facebook</a>
+  </div>
+  <p class="footer__copy">© {year} Sartoria. Sva prava zadržana.</p>
+</footer>

@@ -1,0 +1,39 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Sartoria — Haljine po mjeri · Zenica",
+  description = "Sartoria — radionica u Zenici. Izrada odjeće po mjeri i želji: haljine u univerzalnim veličinama, dužina po vašoj želji, dostava poštom širom BiH.",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="bs">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="/images/w1400/DU_te4uiEGG_02.jpg" />
+    <link rel="icon" href="/images/logo.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <slot />
+    <script>
+      import "../scripts/main.ts";
+    </script>
+  </body>
+</html>

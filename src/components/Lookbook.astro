@@ -1,0 +1,51 @@
+---
+import { GALLERY, GALLERY_GROUPS, GALLERY_PAGE, IG, img } from "../data/site";
+---
+
+<section class="section lookbook" id="lookbook">
+  <h2 class="section-title">Lookbook</h2>
+  <p class="section-sub">
+    Svi modeli s našeg Instagrama — <a href={IG} target="_blank" rel="noopener">@_.sartoria._</a>
+  </p>
+  <div class="tabs" id="galleryTabs">
+    {
+      GALLERY_GROUPS.map((g, i) => (
+        <button class:list={["tab", { "is-active": i === 0 }]} data-filter={g.key}>
+          {g.label}
+        </button>
+      ))
+    }
+  </div>
+  <div class="gallery" id="gallery" data-page={GALLERY_PAGE}>
+    {
+      GALLERY.map((it, i) => (
+        <button
+          class="gitem"
+          data-group={it.group}
+          data-full={img(it.file, 1400)}
+          data-title={it.title}
+          data-url={it.url}
+          hidden={i >= GALLERY_PAGE}
+        >
+          <img src={img(it.file)} alt={it.title} loading="lazy" />
+          <span class="tag">
+            {it.reel && "Reel · "}
+            {it.title}
+          </span>
+        </button>
+      ))
+    }
+  </div>
+  <div class="center">
+    <button class="btn btn--outline" id="loadMore">Prikaži još</button>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox__close" aria-label="Zatvori">×</button>
+  <button class="lightbox__nav lightbox__prev" aria-label="Prethodna">‹</button>
+  <figure>
+    <figcaption></figcaption>
+  </figure>
+  <button class="lightbox__nav lightbox__next" aria-label="Sljedeća">›</button>
+</div>

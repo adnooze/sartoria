@@ -1,0 +1,43 @@
+---
+import { PRODUCT_TABS, DM, img } from "../data/site";
+---
+
+<section class="section products" id="novo">
+  <h2 class="section-title">Novo u ponudi</h2>
+  <div class="tabs" role="tablist" aria-label="Kategorije">
+    {
+      PRODUCT_TABS.map((t, i) => (
+        <button role="tab" class:list={["tab", { "is-active": i === 0 }]} data-tab={t.key}>
+          {t.label}
+        </button>
+      ))
+    }
+  </div>
+  {
+    PRODUCT_TABS.map((t, i) => (
+      <div class="product-grid" data-panel={t.key} hidden={i !== 0}>
+        {t.items.map((p, j) => (
+          <article class="card" style={`animation-delay:${j * 60}ms`}>
+            <a class="card__img" href={DM} target="_blank" rel="noopener">
+              {t.badge && <span class:list={["badge", { "badge--sale": t.key === "akcija" }]}>{t.badge}</span>}
+              <img src={img(p.file)} alt={p.name} loading="lazy" />
+            </a>
+            <div class="card__body">
+              <h3 class="card__name">{p.name}</h3>
+              <p class="card__price">
+                {p.price}
+                {p.oldPrice && <s>{p.oldPrice}</s>}
+              </p>
+              <a class="card__ask" href={DM} target="_blank" rel="noopener" aria-label={`Pitaj za model ${p.name}`}>
+                <svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"></path></svg>
+              </a>
+            </div>
+          </article>
+        ))}
+      </div>
+    ))
+  }
+  <div class="center">
+    <a href="#lookbook" class="btn btn--outline">Pogledaj sve modele</a>
+  </div>
+</section>

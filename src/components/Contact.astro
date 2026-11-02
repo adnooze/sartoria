@@ -1,0 +1,28 @@
+---
+import { DM, IG, FB } from "../data/site";
+---
+
+<section class="contact" id="kontakt">
+  <div class="contact__text">
+    <p class="eyebrow">Posjetite našu radionicu</p>
+    <h2>Sartoria, Zenica</h2>
+    <address>
+      Vojvodica put br. 6, Jalija<br />
+      preko puta žute zgrade Hadžinice<br />
+      Zenica, Bosna i Hercegovina
+    </address>
+    <p class="muted">Za informacije o cijenama, materijalima i narudžbama javite nam se privatnom porukom.</p>
+    <div class="contact__actions">
+      <a href={DM} target="_blank" rel="noopener" class="btn btn--dark">Pošalji poruku</a>
+      <a href={IG} target="_blank" rel="noopener" class="link-arrow">Instagram</a>
+      <a href={FB} target="_blank" rel="noopener" class="link-arrow">Facebook</a>
+    </div>
+  </div>
+  <div class="contact__map">
+    <iframe
+      title="Lokacija radionice Sartoria"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      src="https://maps.google.com/maps?q=Vojvodica%20put%206%2C%20Zenica&z=15&output=embed"></iframe>
+  </div>
+</section>
